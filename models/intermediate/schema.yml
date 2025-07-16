@@ -1,0 +1,179 @@
+
+version: 2
+
+models:
+  - name: int_club_transfers
+    description: ""
+    columns:
+      - name: season
+        data_type: int64
+        description: ""
+
+      - name: club_id
+        data_type: int64
+        description: ""
+
+      - name: total_transfers_income
+        data_type: float64
+        description: ""
+
+      - name: total_transfers_spending
+        data_type: float64
+        description: ""
+
+      - name: net_transfer_balance
+        data_type: float64
+        description: ""
+
+  - name: int_player_participation
+    description: ""
+    columns:
+      - name: player_id
+        data_type: int64
+        description: ""
+
+      - name: year
+        data_type: int64
+        description: ""
+
+      - name: substituting_percentage
+        data_type: float64
+        description: ""
+
+      - name: starting_percentage
+        data_type: float64
+        description: ""
+
+      - name: win_percentage_when_substitute
+        data_type: float64
+        description: ""
+
+      - name: win_percentage_when_starting
+        data_type: float64
+        description: ""
+
+  - name: int_player_performance
+    description: ""
+    columns:
+      - name: player_id
+        data_type: int64
+        description: ""
+
+      - name: player_name
+        data_type: string
+        description: ""
+
+      - name: year
+        data_type: int64
+        description: ""
+
+      - name: games_played
+        data_type: int64
+        description: ""
+
+      - name: total_yellow_cards
+        data_type: int64
+        description: ""
+
+      - name: total_red_cards
+        data_type: int64
+        description: ""
+
+      - name: total_goals
+        data_type: int64
+        description: ""
+
+      - name: total_assists
+        data_type: int64
+        description: ""
+
+      - name: total_minutes_played
+        data_type: int64
+        description: ""
+
+      - name: goals_per_90_min
+        data_type: float64
+        description: ""
+
+      - name: assists_per_90_min
+        data_type: float64
+        description: ""
+
+  - name: int_club_performance
+    description: ""
+    columns:
+      - name: club_id
+        data_type: int64
+        description: ""
+
+      - name: season
+        data_type: int64
+        description: ""
+
+      - name: total_games_played
+        data_type: int64
+        description: ""
+
+      - name: total_home_games_played
+        data_type: int64
+        description: ""
+
+      - name: total_away_games_played
+        data_type: int64
+        description: ""
+
+      - name: total_wins
+        data_type: int64
+        description: ""
+
+      - name: total_home_wins
+        data_type: int64
+        description: ""
+
+      - name: total_away_wins
+        data_type: int64
+        description: ""
+
+      - name: home_win_percentage
+        data_type: float64
+        description: ""
+
+      - name: away_win_percentage
+        data_type: float64
+        description: ""
+
+      - name: total_goals_scored
+        data_type: int64
+        description: ""
+
+      - name: total_home_goals_scored
+        data_type: int64
+        description: ""
+
+      - name: total_away_goals_scored
+        data_type: int64
+        description: ""
+
+      - name: total_goals_conceded
+        data_type: int64
+        description: ""
+
+      - name: total_home_goals_conceded
+        data_type: int64
+        description: ""
+
+      - name: total_away_goals_conceded
+        data_type: int64
+        description: ""
+
+      - name: average_goals_per_match
+        data_type: float64
+        description: ""
+
+      - name: average_goals_per_home_match
+        data_type: float64
+        description: ""
+
+      - name: average_goals_per_away_match
+        data_type: float64
+        description: ""
