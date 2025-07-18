@@ -107,12 +107,18 @@ Once the data processing and transformation scripts were developed, **Apache Air
 - The dashboard is divided into **5 pages**, each providing specific insights and enabling data exploration:
   1. **Players Dashboard**:
      - Users can filter by **Player** and **Season** to view detailed statistics for a specific player during a given season or across multiple seasons.
+   ![Players Dashboard](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/player.png)
   2. **Clubs Dashboard**:
      - Users can filter by **Club** and **Season** to explore statistics for a specific club during a given season or across multiple seasons.
+   ![Clubs Dashboard](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/clubs.png)
   3. **Competitions Dashboard**:
      - Allows filtering by **Competition** and **Season** to view competition-specific statistics, including performance data for each season.
+   ![Competitions Dashboard](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/Competitions.png)
   4. **Transfers Dashboard**:
      - Displays transfer-related data, allowing users to filter by **Season** to see transfers trends.
+   ![Transfers Dashboard](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/transfers.png)
+       
   5. **Total Goals**:
      - Provides **Total Goals** by **Country**.
+   ![Goals Dashboard](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/goals.png)
 - You can access the full Looker studio report [here](https://lookerstudio.google.com/reporting/965238c0-aa82-4db1-91b6-af37fc7bdece) (if my trial GCP account still active :v).
