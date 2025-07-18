@@ -2,7 +2,7 @@
 
 Quick Links: [Looker Studio Data Visualization](https://lookerstudio.google.com/reporting/965238c0-aa82-4db1-91b6-af37fc7bdece)
 
-![Players Dashboard](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/clubs.png)
+![Clubs Dashboard](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/clubs.png)
 
 ## Table of Contents
 
@@ -82,7 +82,7 @@ The data pipeline follows a structured ELT (Extract, Load, Transform) process:
 - Created a **dbt Cloud project** and built staging, intermediate, and mart models to prepare data for analysis.
   - 📂 [dbt full project](https://github.com/long0901/Football-Transfermarkt-Project/tree/main/dbt_project)
   - Included **tests and documentation** to ensure data quality and pipeline reliability.
-    ![dbt lineage](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/dbt.png)
+    ![dbt lineage](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/dbt1.png)
 
 ### 4. Automating the Data Pipeline with Airflow
 
