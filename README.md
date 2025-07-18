@@ -2,7 +2,7 @@
 
 Quick Links: [Looker Studio Data Visualization](https://lookerstudio.google.com/reporting/965238c0-aa82-4db1-91b6-af37fc7bdece)
 
-![Players Dashboard](https://github.com/AbdelaliEch/Football-Data-Project/blob/main/images/Players%20Dashboard.jpg)
+![Players Dashboard](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/clubs.png)
 
 ## Table of Contents
 
@@ -53,7 +53,7 @@ You can access the dataset on Kaggle [here](https://www.kaggle.com/datasets/davi
 
 ## Data Pipeline
 
-![Pipeline Diagram](https://github.com/AbdelaliEch/Football-Data-Project/blob/main/images/Pipeline%20diagram.png)
+![Pipeline Diagram](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/pipeline.png)
 The data pipeline follows a structured ELT (Extract, Load, Transform) process:
 
 1. **Extract**: Download raw csv football data from Kaggle and store it in Google Cloud Storage (GCS).
@@ -73,24 +73,23 @@ The data pipeline follows a structured ELT (Extract, Load, Transform) process:
 
 ### 2. Infrastructure Setup with Terraform
 
-- Provisioned **Google Cloud Storage (GCS) bucket** and **BigQuery datasets** using [Terraform script](https://github.com/AbdelaliEch/Football-Data-Project/blob/main/terraform/main.tf).
+- Provisioned **Google Cloud Storage (GCS) bucket** and **BigQuery datasets** using [Terraform script](https://github.com/long0901/Football-Transfermarkt-Project/tree/main/terraform).
 
 ### 3. Developing Data Processing & Transformation Scripts
 
 - Developed a **PySpark script** to process raw data from gcs and upload it to Bigquery in tables format.
-  - 📜 [PySpark script](https://github.com/AbdelaliEch/Football-Data-Project/blob/main/dataproc_script.py)
+  - 📜 [PySpark script](https://github.com/long0901/Football-Transfermarkt-Project/tree/main/PySpark)
 - Created a **dbt Cloud project** and built staging, intermediate, and mart models to prepare data for analysis.
-  - 📂 [dbt models](https://github.com/AbdelaliEch/Football-Data-Project/tree/main/dbt_project/models)
-  - 📂 [dbt full project](https://github.com/AbdelaliEch/Football-Data-Project/tree/main/dbt_project)
+  - 📂 [dbt full project](https://github.com/long0901/Football-Transfermarkt-Project/tree/main/dbt_project)
   - Included **tests and documentation** to ensure data quality and pipeline reliability.
-    ![dbt lineage](https://github.com/AbdelaliEch/Football-Data-Project/blob/main/images/dbt%20lineage.jpg)
+    ![dbt lineage](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/img/dbt.png)
 
 ### 4. Automating the Data Pipeline with Airflow
 
 Once the data processing and transformation scripts were developed, **Apache Airflow** was used to automate the end-to-end pipeline
 
 - Set up **Astronomer Airflow Docker** by following [this tutorial](https://academy.astronomer.io/path/airflow-101/local-development-environment).
-  - 📂 [Airflow setup directory](https://github.com/AbdelaliEch/Football-Data-Project/tree/main/airflow_astro_docker)
+  - 📂 [Airflow setup directory](https://github.com/long0901/Football-Transfermarkt-Project/tree/main/airflow_astro_docker)
 - Configured necessary connections in Airflow UI (**Kaggle, GCP, and dbt Cloud**).
 
 #### 🔹 DAG Workflow
@@ -100,7 +99,7 @@ Once the data processing and transformation scripts were developed, **Apache Air
 3. **Process Data with PySpark on Dataproc** → Runs a PySpark job on **Google Dataproc** to clean and preprocess data before loading it into **BigQuery**.
 4. **Transform Data using dbt** → Runs dbt models to structure and optimize data in **BigQuery**.
 
-🔗 **[View the full Airflow DAG](https://github.com/AbdelaliEch/Football-Data-Project/blob/main/airflow_astro_docker/dags/project_dag.py)**
+🔗 **[View the full Airflow DAG](https://github.com/long0901/Football-Transfermarkt-Project/blob/main/airflow_astro_docker/dags/project_dag.py)**
 
 ### 5. Visualization with Looker Studio
 
